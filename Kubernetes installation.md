@@ -1,5 +1,11 @@
 # Kubernetes Installation (v1.31)
-
+## ubuntu guest addition:
+```
+sudo apt install open-vm-tools open-vm-tools-desktop -y
+```
+```
+sudo reboot
+```
 ## 1.1. Device minimum requirement
 - Must have at least 2xCPU on Ubuntu
 - Must have a static IP
