@@ -203,6 +203,8 @@ Copy "kubeadm join" command from master node and paste here in worker node:
 ```
 kubeadm join 192.168.119.134:6443 --token 26uac9.vq08kykgru1if5j1 \ --discovery-token-ca-cert-hash sha256:5b37d58b6c6e232dc379863f17cce84be69358c9f4887441cd1588b4809c17bd
 ```
+
+## On Master Node  
 Once joing command is successful, then check cluster status.
 ```
 kubectl get node
