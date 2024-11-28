@@ -211,17 +211,22 @@ kubectl get node
 ```
 
 ## If any connectivity issue occurs:  
-a. Port 6443 must be open on master note  
+
+a. Remove all files inside the following directories:  
+`/etc/apt/keyrings/`  
+`/etc/apt/sources.list.d/`
+
+b. Port 6443 must be open on master note  
 ```
 sudo ss -tuln | grep 6443
 ```
 
-b. Check connectivity from worker node:
+c. Check connectivity from worker node:
 ```
 nc -zv 192.168.119.134 6443
 ```
 
-c. Allow firewall for port 6443
+d. Allow firewall for port 6443
 ```
 sudo ufw allow 6443/tcp 
 ```
